@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AnimatePop Settings</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    .container { max-width: 320px; }
+    label { display: block; margin-top: 10px; }
+    input { width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 15px; box-sizing: border-box; }
+    .btn-group { display: flex; gap: 10px; flex-direction: column; }
+    button { padding: 10px 20px; color: white; border: none; border-radius: 4px; cursor: pointer; width: 100%; }
+    #save { background: #007bff; }
+    #save:hover { background: #0056b3; }
+    #testBtn { background: #28a745; }
+    #testBtn:hover { background: #218838; }
+    #stopBtn { background: #dc3545; }
+    #stopBtn:hover { background: #b02a37; }
+    #stopBtn:disabled { background: #aaa; cursor: not-allowed; }
+    #status { margin-top: 10px; font-size: 0.9em; min-height: 1.2em; }
+    #stateInfo { margin-top: 15px; font-size: 0.9em; color: #555; line-height: 1.5em; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>AnimatePop Settings</h2>
+
+    <label for="cooldownMinutes">Pop-up Interval — cooldown (Minutes):</label>
+    <input type="number" id="cooldownMinutes" min="0.1" step="0.1" value="15">
+
+    <label for="playingMinutes">Playing Interval — overlay duration (Minutes):</label>
+    <input type="number" id="playingMinutes" min="0.1" step="0.1" value="1">
+
+    <div class="btn-group">
+      <button id="save">Save Settings</button>
+      <button id="testBtn">Test Now (Play Overlay)</button>
+      <button id="stopBtn" disabled>Stop Playing</button>
+    </div>
+    <div id="status"></div>
+    <div id="stateInfo"></div>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>
