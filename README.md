@@ -4,7 +4,7 @@ A Chrome extension that plays a transparent cat video as a full-screen overlay o
 
 ## Origin
 
-My girlfriend came across the [Cat Gatekeeper Extension](https://www.catgatekeeper.org/) and asked whether we could use something like it — but with her own cat, **Oden**, instead of the default one. AnimatePop is the result: a small extension that periodically pops a transparent cat video over the page, with the videos swappable so Oden (or any cat) can take over the screen.
+My girlfriend came across the [Cat Gatekeeper Extension](https://www.catgatekeeper.org/) and asked whether we could use something like it — but with her own cat, **Olly**, instead of the default one. AnimatePop is the result: a small extension that periodically pops a transparent cat video over the page, with the videos swappable so Olly (or any cat) can take over the screen.
 
 ## How it works
 
